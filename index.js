@@ -1,8 +1,6 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello, World!'
+    seen: true
   }
 });
-
-app.message = 'I have changed the data';
