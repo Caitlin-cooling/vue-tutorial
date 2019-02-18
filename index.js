@@ -4,3 +4,5 @@ var app = new Vue({
     message: 'Hello, World!'
   }
 });
+
+app.message = 'I have changed the data';
