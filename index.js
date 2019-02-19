@@ -17,3 +17,7 @@ var app = new Vue({
 });
 
 app.todos.push({ text: 'Added another thing!' })
+
+Vue.component('todo-item', {
+  template: '<li>This is a component</li>'
+})
