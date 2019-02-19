@@ -7,6 +7,11 @@ var app = new Vue({
       { text: 'One thing'},
       { text: 'Another thing' },
       { text: 'And another' }
+    ],
+    groceryList: [
+      { id:0, text: 'Apples' },
+      { id:1, text: 'Milk' },
+      { id:2, text: 'Eggs' }
     ]
   },
   methods: {
@@ -19,5 +24,6 @@ var app = new Vue({
 app.todos.push({ text: 'Added another thing!' })
 
 Vue.component('todo-item', {
-  template: '<li>This is a component</li>'
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
 })
